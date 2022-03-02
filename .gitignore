@@ -1,2 +1,4 @@
 node_modules
 credentials.json
+user_data/*
+!user_data/.gitkeep

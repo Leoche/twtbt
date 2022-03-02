@@ -64,5 +64,6 @@ const waitForPageChange = async (page) => {
     loginToTwitter,
     tweetAfterLogin,
     generateRandomTweet,
-    followUsername
+    followUsername,
+    open
   };
