@@ -20,7 +20,7 @@ async function searchHashtag(hash, token) {
     })
 
     if (res.body) {
-        console.log("Successfully searched " + numTweet + " for hashtag: " + hash);
+        console.log("Successfully searched for hashtag: " + hash);
         return res.body;
     } else {
         throw new Error('Unsuccessful request');
