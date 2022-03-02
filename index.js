@@ -52,8 +52,6 @@ const followRun = async (hashtag) => {
 const main = async () => {
   console.clear();
   const hashtag = process.argv.slice(2)[0];
-  console.log(hashtag);
-  return;
   await login();
   await followRun(hashtag);
   setInterval(() => {
