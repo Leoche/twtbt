@@ -6,11 +6,10 @@ async function searchHashtag(hash, token) {
     // Edit query parameters below
     // specify a search query, and any additional fields that are required
     // by default, only the Tweet ID and text fields are returned
-    const numTweet = Math.round(Math.random()*10+10);
     const params = {
         'query': '#' + hash,
         'expansions': 'author_id',
-        'max_results': numTweet,
+        'max_results': 100,
     }
 
     const res = await needle('get', endpointUrl, params, {

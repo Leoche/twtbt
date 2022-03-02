@@ -60,9 +60,12 @@ const followRun = async (hashtag) => {
   let maxCount = 1 + Math.floor(Math.random() * 3);
   tweets.data.forEach(tweet => {
     if(i < maxCount) {
-      toFollow.push(tweets.includes.users.filter(user => tweet.author_id == user.id )[0].username);
+      let username = tweets.includes.users.filter(user => tweet.author_id == user.id )[0].username
+      if(!hasFollowed(username)) {
+        toFollow.push(username);
+        i++;
+      }
     }
-    i++;
   });
       
   console.log('Account: ', credentials.email);
