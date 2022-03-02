@@ -81,6 +81,7 @@ const followRun = async (hashtag) => {
       console.log('Already followed: ', username);
     }
   }
+  console.log('[TWTBT] FINISHED: FOLLOWED ' + maxCount + ' ACCOUNTS. Waiting for next run...');
 };
 const main = async () => {
   console.clear();
